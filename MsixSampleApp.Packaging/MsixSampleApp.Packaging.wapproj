@@ -50,7 +50,7 @@
   </PropertyGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.props" />
   <PropertyGroup>
-    <ProjectGuid>814EA0C3-422E-440D-A73B-E5FE4AEE3E2A</ProjectGuid>
+    <ProjectGuid>F6BFCDBC-234F-41C5-ACBE-DCDF1F3B31F6</ProjectGuid>
     <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
@@ -58,6 +58,7 @@
     <EntryPointProjectUniqueName>..\MsixSampleApp\MsixSampleApp.csproj</EntryPointProjectUniqueName>
     <PackageCertificateKeyFile>MsixSampleApp.Packaging_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxBuildConfigurationSelection>x86|x64</AppxBuildConfigurationSelection>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -72,7 +73,7 @@
     <Content Include="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Images\StoreLogo.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
-	<None Include="MsixSampleApp.Packaging_TemporaryKey.pfx" />
+	  <None Include="MsixSampleApp.Packaging_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MsixSampleApp\MsixSampleApp.csproj">

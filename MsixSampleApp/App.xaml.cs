@@ -9,8 +9,6 @@ using Microsoft.Extensions.Hosting;
 
 using MsixSampleApp.Contracts.Services;
 using MsixSampleApp.Contracts.Views;
-using MsixSampleApp.Core.Contracts.Services;
-using MsixSampleApp.Core.Services;
 using MsixSampleApp.Models;
 using MsixSampleApp.Services;
 using MsixSampleApp.ViewModels;
@@ -48,7 +46,6 @@ namespace MsixSampleApp
             services.AddHostedService<ApplicationHostService>();
 
             // Core Services
-            services.AddSingleton<IFileService, FileService>();
 
             // Services
             services.AddSingleton<IPageService, PageService>();
